@@ -1,7 +1,8 @@
 
 import {
   DashBoard,
- 
+  Grid,
+  Authentication
 } from "@/components/svg";
 
 
@@ -25,6 +26,11 @@ export const menusConfig = {
       icon: DashBoard,
       href: "/blank",
     },
+    {
+      title: "chat",
+      icon: DashBoard,
+      href: "/chat",
+    },
   ],
   sidebarNav: {
     modern: [
@@ -33,6 +39,11 @@ export const menusConfig = {
         icon: DashBoard,
         href: "/blank",
       },
+      {
+        title: "chat",
+        icon: DashBoard,
+        href: "/chat",
+      },
     ],
     classic: [
        {
@@ -40,10 +51,21 @@ export const menusConfig = {
         title: "menu",
       },
       {
-        title: "blank",
+        title: "home",
         icon: DashBoard,
         href: "/blank",
       },
+      {
+        title: "form",
+        icon: Authentication,
+        href: "/form",
+      },
+      {
+        title: "workflow",
+        icon: Grid,
+        href: "/workflow",
+      },
+
     ],
   },
 };
