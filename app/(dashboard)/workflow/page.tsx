@@ -14,7 +14,7 @@ const WorkflowPage = () => {
           Create Workflow
         </BreadcrumbItem>
       </Breadcrumbs>
-      <div style={{ width: "100%", height: "600px", marginTop: "2em" }}>
+      <div className="h-[600px] w-full">
         <Flow />
       </div>
     </div>

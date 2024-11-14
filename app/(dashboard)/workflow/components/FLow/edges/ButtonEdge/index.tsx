@@ -5,6 +5,7 @@ import {
   useReactFlow,
   type EdgeProps,
   type Edge,
+  getSmoothStepPath,
 } from "@xyflow/react";
 
 const buttonStyle = {
@@ -34,7 +35,7 @@ export default function ButtonEdge({
   markerEnd,
 }: EdgeProps<ButtonEdge>) {
   const { setEdges } = useReactFlow();
-  const [edgePath, labelX, labelY] = getBezierPath({
+  const [edgePath, labelX, labelY] = getSmoothStepPath({
     sourceX,
     sourceY,
     sourcePosition,
